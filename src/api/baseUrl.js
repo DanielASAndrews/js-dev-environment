@@ -1,5 +1,6 @@
 export default function getBaseUrl(){
-	return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+	//False result will use hosted api
+	return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://shielded-harbor-77013.herokuapp.com/';
 }
 
 function getQueryStringParameterByName(name, url) {
