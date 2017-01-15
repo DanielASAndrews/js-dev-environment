@@ -11,7 +11,7 @@
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000 --subdomain danielandrews",
     "share": "npm-run-all --parallel open:src localtunnel",
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test": "mocha buildScripts/testSetup.js \"src/**/*.test.js\" --reporter progress",
     "test:watch": "npm run test -- --watch",
     "test:cover:travis": "babel-node node_modules/isparta/bin/isparta cover --root src --report lcovonly _mocha -- --require buildScripts/testSetup.js \"src/**/*.test.js\" && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test:coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec --require buildScripts/testSetup.js \"src/**/*.test.js\" && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
