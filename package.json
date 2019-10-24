@@ -43,7 +43,7 @@
     "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
     "css-loader": "2.0.0",
-    "eslint": "5.10.0",
+    "eslint": "6.5.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-watch": "4.0.2",
     "express": "4.16.4",
