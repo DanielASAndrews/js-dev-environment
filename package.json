@@ -44,7 +44,7 @@
     "cross-env": "^6.0.3",
     "css-loader": "2.0.0",
     "eslint": "6.5.0",
-    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-import": "2.19.0",
     "eslint-watch": "6.0.1",
     "express": "4.16.4",
     "extract-text-webpack-plugin": "3.0.2",
